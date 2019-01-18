@@ -1,0 +1,102 @@
+[
+  {
+    "id": "1",
+    "page_url": "product-1",
+    "image": "data/product-img-1.png",
+    "label": "Топ продаж",
+    "title": "Адреналин-здоровье раствор д/ин. 0,18 % по 1 мл в амп. №10",
+    "old_price": "559.00",
+    "new_price": "519.75",
+    "price": "519.75",
+    "currency": "грн",
+    "status": "Купить",
+    "parameters": {
+      "categorey": "Лекарственные препараты",
+      "sort": "Сердечно-сосудистые",
+      "manufacturer_name": "Фармацевтическая компания «Здоровье»",
+      "manufacturer_country": "Украина",
+      "manufacturer_form": "Раствор для инъекций ампула 1,82мг/мл 1мл",
+      "quantity": "10"
+    }
+  },
+  {
+    "id": "2",
+    "page_url": "product-2",
+    "image": "data/product-img-2.png",
+    "label": "Топ продаж",
+    "title": "Адреналин-здоровье",
+    "old_price": "800.00",
+    "new_price": "590.75",
+    "price": "590.75",
+    "currency": "грн",
+    "status": "Купить",
+    "parameters": {
+      "categorey": "Лекарственные препараты",
+      "sort": "Сердечно-сосудистые",
+      "manufacturer_name": "CEFAK",
+      "manufacturer_country": "Израиль",
+      "manufacturer_form": "Раствор для инъекций ампула 1,82мг/мл 1мл",
+      "quantity": "10"
+    }
+  },
+  {
+    "id": "3",
+    "page_url": "product-3",
+    "image": "data/product-img-3.png",
+    "label": "Топ продаж",
+    "title": "Адреналин-здоровье раствор д/ин. 0,18 % по 1 мл в амп. №10",
+    "old_price": "559.00",
+    "new_price": "519.75",
+    "price": "519.75",
+    "currency": "грн",
+    "status": "Купить",
+    "parameters": {
+      "categorey": "Лекарственные препараты",
+      "sort": "Сердечно-сосудистые",
+      "manufacturer_name": "CEFAK",
+      "manufacturer_country": "Израиль",
+      "manufacturer_form": "Раствор для инъекций ампула 1,82мг/мл 1мл",
+      "quantity": "10"
+    }
+  },
+  {
+    "id": "4",
+    "page_url": "product-4",
+    "image": "data/product-img-3.png",
+    "label": "Топ продаж",
+    "title": "Адреналин-здоровье раствор д/ин. 0,18 % по 1 мл в амп. №10",
+    "old_price": "559.00",
+    "new_price": "519.75",
+    "price": "519.75",
+    "currency": "грн",
+    "status": "Купить",
+    "parameters": {
+      "categorey": "Лекарственные препараты",
+      "sort": "Сердечно-сосудистые",
+      "manufacturer_name": "Фармацевтическая компания «Здоровье»",
+      "manufacturer_country": "Украина",
+      "manufacturer_form": "Раствор для инъекций ампула 1,82мг/мл 1мл",
+      "quantity": "10"
+    }
+  },
+  {
+    "id": "5",
+    "page_url": "product-5",
+    "image": "data/product-img-3.png",
+    "label": "Топ продаж",
+    "title": "Адреналин-здоровье раствор д/ин. 0,18 % по 1 мл в амп. №10",
+    "old_price": "559.00",
+    "new_price": "519.75",
+    "price": "519.75",
+    "currency": "грн",
+    "status": "Купить",
+    "parameters": {
+      "categorey": "Лекарственные препараты",
+      "sort": "Сердечно-сосудистые",
+      "manufacturer_name": "Фармацевтическая компания «Здоровье»",
+      "manufacturer_country": "Украина",
+      "manufacturer_form": "Раствор для инъекций ампула 1,82мг/мл 1мл",
+      "quantity": "10"
+    }
+  }
+]
