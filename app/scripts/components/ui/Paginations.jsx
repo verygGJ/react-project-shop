@@ -19,7 +19,7 @@ const range = (from, to, step = 1) => {
 class Pagination extends Component {
   constructor(props) {
     super(props);
-    const { totalRecords = null, pageLimit = 30, pageNeighbours = 0 } = props;
+    const { totalRecords = null, pageLimit = 30, pageNeighbours = 0, totalPages = null, currentPage = 1 } = props;
 
     this.pageLimit = typeof pageLimit === "number" ? pageLimit : 30;
     this.totalRecords = typeof totalRecords === "number" ? totalRecords : 0;
@@ -30,8 +30,6 @@ class Pagination extends Component {
         : 0;
 
     this.totalPages = Math.ceil(this.totalRecords / this.pageLimit);
-
-    this.state = { currentPage: 1 };
   }
 
   componentDidMount() {
@@ -40,17 +38,14 @@ class Pagination extends Component {
 
   gotoPage = page => {
     const { onPageChanged = f => f } = this.props;
-
     const currentPage = Math.max(0, Math.min(page, this.totalPages));
-
     const paginationData = {
       currentPage,
       totalPages: this.totalPages,
       pageLimit: this.pageLimit,
       totalRecords: this.totalRecords
     };
-
-    this.setState({ currentPage }, () => onPageChanged(paginationData));
+    onPageChanged(paginationData)
   };
 
   handleClick = (page, evt) => {
@@ -60,19 +55,18 @@ class Pagination extends Component {
 
   handleMoveLeft = evt => {
     evt.preventDefault();
-    this.gotoPage(this.state.currentPage - this.pageNeighbours * 2 - 1);
+    this.gotoPage(this.props.currentPage - this.pageNeighbours * 2 - 1);
   };
 
   handleMoveRight = evt => {
     evt.preventDefault();
-    this.gotoPage(this.state.currentPage + this.pageNeighbours * 2 + 1);
+    this.gotoPage(this.props.currentPage + this.pageNeighbours * 2 + 1);
   };
 
   fetchPageNumbers = () => {
-    const totalPages = this.totalPages;
-    const currentPage = this.state.currentPage;
+    const totalPages = this.props.totalPages;
+    const currentPage = this.props.currentPage;
     const pageNeighbours = this.pageNeighbours;
-
     const totalNumbers = this.pageNeighbours * 2 + 3;
     const totalBlocks = totalNumbers + 2;
 
@@ -114,11 +108,10 @@ class Pagination extends Component {
   };
 
   render() {
+    const { currentPage, totalPages } = this.props;
     if (!this.totalRecords) return null;
+    if (totalPages === 1) return null;
 
-    if (this.totalPages === 1) return null;
-
-    const { currentPage } = this.state;
     const pages = this.fetchPageNumbers();
 
     return (
